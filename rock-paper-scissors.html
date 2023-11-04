@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="display: flex; flex-direction: column;  align-items: center; text-align: center; color: whitesmoke; background:darkslategrey">
+    <h1 style="font-family: 'Lilita One', sans-serif; font-size: 88px; margin-bottom: 10px;">ROCK PAPER SCISSORS</h1>
+    <h2 id="game" style="font-size: 70px;">NEW GAME! THROW HANDS!</h2>
+    
+    <div id="hands" style="display: flex; gap: 10px; width: 55%;">
+        <button id="rock" style="width: 50%; border-radius: 100%;"><img src="rock.jpg" width="100%"></button>
+        <button id="paper" style="width: 50%; border-radius: 100%;"><img src="paper.jpg" width="100%"></button>
+        <button id="scissors" style="width: 50%; border-radius: 100%;"><img src="scissors.jpg" width="100%"></button>
+    </div>
+    <p id="score" style="font-size: 70px; color: red;">BEST OF 5 WINS!<p>
     
 </body>
 </html>
